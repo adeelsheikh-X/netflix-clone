@@ -22,6 +22,7 @@ A full-stack Netflix Clone web application built using **Node.js**, **Express.js
 - **Icons**: Material Symbols
 
 ## 📁 Project Structure
+```
 netflix-clone/
 ├── public/ # Static files (CSS, JS, images)
 ├── views/ # EJS templates (main.ejs, login.ejs, etc.)
@@ -29,6 +30,7 @@ netflix-clone/
 ├── models/ # Mongoose schemas
 ├── app.js # Main server file
 └── package.json
+```
 
 ## 🚀 How to Run Locally
 
