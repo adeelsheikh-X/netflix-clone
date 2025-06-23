@@ -41,6 +41,7 @@ npm install
 
 4. Set up environment variables
 Create a .env file in the root directory and add:
+
 MONGO_URI=your_mongodb_connection_string
 
 SESSION_SECRET=your_session_secret
