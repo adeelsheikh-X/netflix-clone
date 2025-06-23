@@ -32,41 +32,50 @@ netflix-clone/
 
 ## 🚀 How to Run Locally
 
-1. **Clone the repo**
+## 1. **Clone the repo**
    ```bash
    git clone https://github.com/yourusername/netflix-clone-ejs.git
    cd netflix-clone-ejs
-2. Install dependencies
+```
+## 2. Install dependencies
+```bash
 npm install
+```
 
-4. Set up environment variables
+## 4. Set up environment variables
    
 Create a .env file in the root directory and add:
+```bash
 
 MONGO_URI=your_mongodb_connection_string
 
 SESSION_SECRET=your_session_secret
+```
 
 
-5. Run the app
+## 5. Run the app
+```bash
    cd backend
    npm start
-6. Visit
+```
+## 6. Visit
+```
    http://localhost:3000
+```
 
 
 
 
-✍️ Author
+## ✍️ Author
 Sheikh Adeel
 📍 Vehari, Pakistan
 🎓 BSCS - COMSATS University, Vehari Campus
 📫 https://linkedin.com/in/sheikh-adeel | adeelsheikh0036@gmail.com
 
-📜 License
+## 📜 License
 This project is open source and available under the MIT License.
 
-Screen Shots
+# Screen Shots
 ![Image](https://github.com/user-attachments/assets/174c88a3-0e75-480f-a4fb-e9b65af468cf)
 ![Image](https://github.com/user-attachments/assets/cf953720-77a0-4556-b496-a4ea9670dc1c)
 ![Image](https://github.com/user-attachments/assets/9b81b090-232a-41e2-a5bf-5efaeb9d33a1)
