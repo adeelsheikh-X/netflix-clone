@@ -69,10 +69,12 @@ SESSION_SECRET=your_session_secret
 
 
 ## ✍️ Author
+```
 Sheikh Adeel
 📍 Vehari, Pakistan
 🎓 BSCS - COMSATS University, Vehari Campus
 📫 https://linkedin.com/in/sheikh-adeel | adeelsheikh0036@gmail.com
+```
 
 ## 📜 License
 This project is open source and available under the MIT License.
