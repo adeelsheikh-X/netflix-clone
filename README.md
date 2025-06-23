@@ -38,22 +38,29 @@ netflix-clone/
    cd netflix-clone-ejs
 2. Install dependencies
 npm install
-3. Set up environment variables
+
+4. Set up environment variables
 Create a .env file in the root directory and add:
 MONGO_URI=your_mongodb_connection_string
 
 SESSION_SECRET=your_session_secret
+
+
 5. Run the app
    cd backend
    npm start
 6. Visit
    http://localhost:3000
 
+
 ✍️ Author
 Sheikh Adeel
 📍 Vehari, Pakistan
 🎓 BSCS - COMSATS University, Vehari Campus
 📫 https://linkedin.com/in/sheikh-adeel | adeelsheikh0036@gmail.com
+
+📜 License
+This project is open source and available under the MIT License.
 
 
 
