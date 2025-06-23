@@ -1,0 +1,38 @@
+<footer>
+    <p>Questions? <a href="#">Contact us.</a></p>
+    <div class="footer">
+      <div class="footer-items">
+        <a href="#">FAQ</a>
+        <a href="#">Help Center</a>
+        <a href="#">Account</a>
+        <a href="#">Media Center</a>
+      </div>
+      <div class="footer-items">
+        <a href="#">Investor Relations</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="footer-items">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-items">
+        <a href="#">Speed Test</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Only on Netflix</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    document.querySelectorAll(".question").forEach(button => {
+      button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle("active");
+      });
+    });
+  </script>
+  

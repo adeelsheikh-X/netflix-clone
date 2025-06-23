@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Netflix Clone</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="main login-signup">
+    <!-- Background overlay -->
+    <div class="box"></div>
+
+    <!-- Logo (top left) -->
+    <nav>
+      <img src="/Assets/Images/logo.svg" alt="Netflix Logo" class="logo">
+    </nav>
+
+    <!-- Login Form -->
+    <div class="hero">
+      <h1>Log In</h1>
+
+      <!-- Display error message if it exists -->
+      <% if (typeof error !== 'undefined') { %>
+        <p style="color: red;"><%= error %></p>
+      <% } %>
+
+      <form action="/login" method="POST" class="hero-buttons">
+        <!-- Editable email input, pre-filled from query -->
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          value="<%= email || '' %>" 
+          required>
+
+        <!-- Password input -->
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Enter your password" 
+          required>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn-g">Login</button>
+      </form>
+
+      <div class="signin-link">
+        <p>New to Netflix? <a href="/signup" class="highlight-link">Sign up now</a>.</p>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<%- include("partials/header") %>
+
+<!-- Main Signup Section -->
+<header class="main login-signup">
+  <nav>
+    <span><img src="/Assets/Images/logo.svg" alt="Netflix Logo" class="logo" /></span>
+    <div>
+      <button class="btn">English</button>
+    </div>
+  </nav>
+
+  <div class="box"></div>
+
+  <div class="hero">
+    <h1>Create a Netflix Account</h1>
+    <form id="signupForm" class="hero-buttons">
+      <input type="email" id="email" placeholder="Email address" required />
+      <input type="password" id="password" placeholder="Create a password" required />
+      <button type="submit" class="btn btn-g">Sign Up</button>
+    </form>
+
+    <!-- Error message area -->
+    <p id="error" style="color: red; margin-top: 10px;"></p>
+
+    <div class="signin-link">
+      <p>Already have an account? <a href="/login">Log in now</a></p>
+    </div>
+  </div>
+</header>
+
+<%- include("partials/footer") %>
+
+<!-- Signup JS Logic -->
+<script>
+  document.getElementById("signupForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const errorElement = document.getElementById("error");
+    errorElement.textContent = "";
+
+    try {
+      const response = await fetch("/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        window.location.href = "/login";
+      } else {
+        errorElement.textContent = data.message || "Something went wrong!";
+      }
+    } catch (err) {
+      console.error("Signup error:", err);
+      errorElement.textContent = "Network error. Please try again later.";
+    }
+  });
+</script>

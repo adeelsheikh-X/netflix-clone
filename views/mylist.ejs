@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NETFLIX</div>
+    <nav class="menu">
+      <a href="/main">Home</a> <!-- ✅ EJS/Express link -->
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">Games</a>
+      <a href="#">New & Popular</a>
+      <a href="/mylist">My List</a>
+      <a href="#">Browse by Languages</a>
+    </nav>
+    <div class="icons">
+      <span class="bell">🔔<span class="badge">3</span></span>
+      <span class="profile">😎</span>
+    </div>
+  </header>
+
+  <!-- My List Section -->
+  <section class="top10-section">
+    <h3>My List</h3>
+    <div class="top10-row" id="myListContainer">
+      <!-- Movies will be inserted here via JavaScript -->
+    </div>
+  </section>
+
+  <script src="/js/mylist.js"></script> <!-- ✅ Moved logic to external JS file -->
+</body>
+</html>

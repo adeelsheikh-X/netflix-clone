@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone - Main Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">NETFLIX</div>
+  <nav class="menu">
+    <a href="/main">Home</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">Games</a>
+    <a href="#">New & Popular</a>
+    <a href="/mylist">My List</a>
+    <a href="#">Browse by Languages</a>
+  </nav>
+  <button class="logout-btn" onclick="window.location.href='/logout'">Log Out</button>
+</header>
+
+<!-- Banner -->
+<section class="banner">
+  <video id="bannerVideo" autoplay muted loop playsinline>
+    <source src="/Assets/Videos/banner.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="banner-text">
+    <h2>Thunderbolt (2025)</h2>
+    <p>Action · Sci-Fi · Thriller · Intense <br>
+      Starring: John Boyega, Ana de Armas, Hiroyuki Sanada<br>
+      Director: F. Gary Gray<br>
+      Runtime: 2h 6m<br>
+      Audio: English [Original]<br>
+      Subtitles: English, French, Hindi, more</p>
+    <div class="banner-buttons">
+      <button class="btn">Watch Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Top 10 Movies -->
+<section class="top10-section">
+  <h3>Top 10 Movies in Pakistan Today</h3>
+  <div class="top10-row" id="moviesContainer">
+    <div class="card">
+      <span class="rank">1</span>
+      <img src="/Assets/Images/1.jpeg" alt="Inside Man" />
+      <button class="btn-add"
+        data-id="movie1"
+        data-title="Bloody Daddy"
+        data-img="/Assets/Images/1.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">2</span>
+      <img src="/Assets/Images/2.jpeg" alt="Exterritorial" />
+      <button class="btn-add"
+        data-id="movie2"
+        data-title="Kraven"
+        data-img="/Assets/Images/2.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">3</span>
+      <img src="/Assets/Images/3.jpeg" alt="Jewel Thief" />
+      <button class="btn-add"
+        data-id="movie3"
+        data-title="Dora"
+        data-img="/Assets/Images/3.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">4</span>
+      <img src="/Assets/Images/4.jpeg" alt="Havoc" />
+      <button class="btn-add"
+        data-id="movie4"
+        data-title="Shazam"
+        data-img="/Assets/Images/4.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">5</span>
+      <img src="/Assets/Images/9.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie5"
+        data-title="Dead Pool"
+        data-img="/Assets/Images/9.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">6</span>
+      <img src="/Assets/Images/5.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie6"
+        data-title="Migration"
+        data-img="/Assets/Images/5.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">7</span>
+      <img src="/Assets/Images/6.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie7"
+        data-title="Mechanic"
+        data-img="/Assets/Images/6.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">8</span>
+      <img src="/Assets/Images/7.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie8"
+        data-title="Random"
+        data-img="/Assets/Images/7.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">9</span>
+      <img src="/Assets/Images/8.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie9"
+        data-title="F1"
+        data-img="/Assets/Images/8.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">10</span>
+      <img src="/Assets/Images/10.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie10"
+        data-title="Migration"
+        data-img="/Assets/Images/10.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+  </div>
+
+</section>
+<section class="top10-section">
+  <h3>Hindi Movies</h3>
+  <div class="top10-row" id="moviesContainer">
+    <div class="card">
+      <span class="rank">11</span>
+      <img src="/Assets/Images/11.jpeg" alt="Inside Man" />
+      <button class="btn-add"
+        data-id="movie11"
+        data-title="Vaathi"
+        data-img="/Assets/Images/11.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">12</span>
+      <img src="/Assets/Images/12.jpeg" alt="Exterritorial" />
+      <button class="btn-add"
+        data-id="movie12"
+        data-title="Thank God"
+        data-img="/Assets/Images/12.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">13</span>
+      <img src="/Assets/Images/13.jpeg" alt="Jewel Thief" />
+      <button class="btn-add"
+        data-id="movie13"
+        data-title="Kill"
+        data-img="/Assets/Images/13.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">14</span>
+      <img src="/Assets/Images/14.jpeg" alt="Havoc" />
+      <button class="btn-add"
+        data-id="movie14"
+        data-title="Sonu and Titu"
+        data-img="/Assets/Images/14.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+    <div class="card">
+      <span class="rank">15</span>
+      <img src="/Assets/Images/15.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie15"
+        data-title="Drishyam"
+        data-img="/Assets/Images/15.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">16</span>
+      <img src="/Assets/Images/16.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie16"
+        data-title="Phule"
+        data-img="/Assets/Images/16.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">17</span>
+      <img src="/Assets/Images/17.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie17"
+        data-title="Raid 2"
+        data-img="/Assets/Images/17.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">18</span>
+      <img src="/Assets/Images/18.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie18"
+        data-title="Kick"
+        data-img="/Assets/Images/18.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">19</span>
+      <img src="/Assets/Images/19.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie19"
+        data-title="Jewel Thief"
+        data-img="/Assets/Images/19.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+     <div class="card">
+      <span class="rank">20</span>
+      <img src="/Assets/Images/20.jpeg" alt="Migration" />
+      <button class="btn-add"
+        data-id="movie20"
+        data-title="BajiRao Mastani"
+        data-img="/Assets/Images/20.jpeg"
+        onclick="addToMyList(this)"
+      >➕ Add to My List</button>
+    </div>
+  </div>
+</section>
+<script src="/js/main.js"></script>
+</body>
+</html>

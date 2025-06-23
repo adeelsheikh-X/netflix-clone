@@ -1,0 +1,103 @@
+<%- include("partials/header") %>
+
+<header class="main">
+  <nav>
+    <span><img src="/Assets/Images/logo.svg" alt="Netflix Logo"/></span>
+    <div>
+      <button class="btn">English</button>
+      <button class="btn btn-s" onclick="window.location.href='/signup';">Sign In</button>
+    </div>
+  </nav>
+  <div class="box"></div>
+  <div class="hero">
+    <h1>Unlimited movies, TV shows, and more</h1>
+    <p>Starts at Rs 250. Cancel anytime.</p>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="hero-buttons">
+      <form action="/login" method="GET">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-g btn-s">Get Started ></button>
+      </form>
+    </div>
+  </div>
+  <div class="separate"></div>
+</header>
+
+<main>
+  <!-- Section 1 -->
+  <section class="feature">
+    <div class="text">
+      <h2>Stream on Your TV</h2>
+      <p>Enjoy Netflix on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more. Immerse yourself in your favorite content right from your living room.</p>
+    </div>
+    <div class="media">
+      <img src="/Assets/Images/tv.png" alt="TV">
+      <video autoplay muted loop>
+        <source src="/Assets/Videos/video-tv-in-0819.m4v" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  <div class="separate-line"></div>
+
+  <!-- Section 2 (image left, text right) -->
+  <section class="feature">
+    <div class="media">
+      <img src="/Assets/Images/secondimage.jpeg" alt="Download Shows">
+    </div>
+    <div class="text">
+      <h2>Download and Watch Anytime</h2>
+      <p>Easily download your favorite shows and movies to your device. Whether you're offline or on the go, your entertainment goes with you.</p>
+    </div>
+  </section>
+  <div class="separate-line"></div>
+
+  <!-- Section 3 -->
+  <section class="feature reverse">
+    <div class="media">
+      <img src="/Assets/Images/tv.png" alt="Devices">
+      <video autoplay muted loop>
+        <source src="/Assets/Videos/Video 53_assets_videos_video1.m4v" type="video/mp4">
+      </video>
+    </div>
+    <div class="text">
+      <h2>Watch Anytime, Anywhere</h2>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without interruptions. Entertainment tailored to your lifestyle.</p>
+    </div>
+  </section>
+  <div class="separate-line"></div>
+
+  <!-- Section 4 (image left, text right) -->
+  <section class="feature">
+    <div class="media">
+      <img src="/Assets/Images/creat profile.jpeg" alt="Kids Profile">
+    </div>
+    <div class="text">
+      <h2>Profiles for Every Family Member</h2>
+      <p>Create individual profiles for kids filled with age-appropriate content. Let them explore adventures with their favorite characters in a safe and fun environment.</p>
+    </div>
+  </section>
+  <div class="separate-line"></div>
+
+  <!-- FAQ (unchanged) -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="question">What is Netflix?</button>
+      <div class="answer">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.</div>
+    </div>
+    <div class="faq-item">
+      <button class="question">How much does Netflix cost?</button>
+      <div class="answer">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one low fixed monthly fee.</div>
+    </div>
+    <div class="faq-item">
+      <button class="question">What can I watch on Netflix?</button>
+      <div class="answer">You can watch a vast library of feature films, documentaries, TV shows, anime, and more on Netflix.</div>
+    </div>
+    <div class="faq-item">
+      <button class="question">Where can I watch?</button>
+      <div class="answer">You can watch anywhere, anytime, on an unlimited number of devices.</div>
+    </div>
+  </section>
+</main>
+
+<%- include("partials/footer") %>
